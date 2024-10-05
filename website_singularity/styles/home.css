@@ -8,6 +8,14 @@ body{
     background-image: url("http://www.w3.org/2000/svg")
 }
 
+nav {
+    display: flex;
+    width: 59.66669rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
 textarea:focus-visible{outline:none}
 button{-webkit-font-smoothing:inherit;
 -moz-osx-font-smoothing:inherit;
