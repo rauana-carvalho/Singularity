@@ -1,3 +1,8 @@
+:root {
+    --black: #1E1E1E;
+    --white: #d9d9d9;
+  }
+
 @font-face {
     src: url(/__assets/BricolageGrotesque-SemiBold-600.woff2) format("woff2");
     font-family: Bricolage Grotesque;
@@ -15,7 +20,7 @@
 }
 
 body {
-    background-color: #1e1e1e;
+    background-color: var(--black);
 }
 
 nav {
@@ -120,13 +125,13 @@ body ::-webkit-scrollbar {
 }
 
 #_ {
-    background-color: #1e1e1e;
+    background-color: var(--black);
     min-height: 100vh;
     display: grid;
 }
 
-#MacBook_Air_1 {
-    background-color: #1e1e1e;
+#container {
+    background-color: var(--black);
     width: 1280px;
     min-width: 1280px;
     max-width: 1280px;
@@ -139,7 +144,7 @@ body ::-webkit-scrollbar {
 
 #Rectangle_2 {
     --f2w-order: 0;
-    background-color: #1e1e1e;
+    background-color: var(--black);
     width: 1280px;
     height: 93.3px;
     position: absolute;
@@ -147,7 +152,7 @@ body ::-webkit-scrollbar {
     left: 0;
 }
 
-#Vector {
+#Vector{
     --f2w-order: 1;
     width: 85px;
     height: 59px;
@@ -172,7 +177,7 @@ body ::-webkit-scrollbar {
     aspect-ratio: 1.51;
     mask-type: alpha;
     --f2w-order: 0;
-    background-image: radial-gradient(#d9d9d9 0%, #4d4d4d 40%, #1e1e1e80 94%, #1e1e1e00 100%);
+    background-image: radial-gradient(var(--white) 0%, #4d4d4d 40%, #1e1e1e80 94%, #1e1e1e00 100%);
     border-radius: 50%;
     width: 2056.2px;
     height: 1359.1px;
@@ -193,7 +198,7 @@ body ::-webkit-scrollbar {
     overflow-wrap: break-word;
     color: #0000;
     --f2w-order: 3;
-    background-image: linear-gradient(#d9d9d9 0%, #7b7b7b 100%);
+    background-image: linear-gradient(var(--white) 0%, #7b7b7b 100%);
     -webkit-background-clip: text;
     background-clip: text;
     width: 657.8px;
@@ -210,7 +215,7 @@ body ::-webkit-scrollbar {
 #__0 {
     overflow-wrap: break-word;
     color: #0000;
-    background-image: linear-gradient(#d9d9d9 0%, #7b7b7b 100%);
+    background-image: linear-gradient(var(--white) 0%, #7b7b7b 100%);
     -webkit-background-clip: text;
     background-clip: text;
     font-family: Bricolage Grotesque;
@@ -222,7 +227,7 @@ body ::-webkit-scrollbar {
 #_3_9 {
     text-align: center;
     overflow-wrap: break-word;
-    color: #d9d9d9;
+    color: var(--white);
     --f2w-order: 4;
     -webkit-background-clip: text;
     background-clip: text;
@@ -238,7 +243,7 @@ body ::-webkit-scrollbar {
 
 #__1 {
     overflow-wrap: break-word;
-    color: #d9d9d9;
+    color: var(--white);
     -webkit-background-clip: text;
     background-clip: text;
     font-family: Inter;
@@ -272,7 +277,7 @@ body ::-webkit-scrollbar {
 #Frame_2 {
     grid-column-gap: 7.1px;
     --f2w-order: 0;
-    border: 0.9px solid #d9d9d9;
+    border: 0.9px solid var(--white);
     border-radius: 10px;
     flex-flow: row;
     flex-shrink: 0;
@@ -288,7 +293,7 @@ body ::-webkit-scrollbar {
 #_3_13 {
     text-align: center;
     overflow-wrap: break-word;
-    color: #d9d9d9;
+    color: var(--white);
     --f2w-order: 0;
     -webkit-background-clip: text;
     background-clip: text;
@@ -304,7 +309,7 @@ body ::-webkit-scrollbar {
 
 #__2 {
     overflow-wrap: break-word;
-    color: #d9d9d9;
+    color: var(--white);
     -webkit-background-clip: text;
     background-clip: text;
     font-family: Inter;
@@ -335,7 +340,7 @@ body ::-webkit-scrollbar {
 #_3_15 {
     text-align: center;
     overflow-wrap: break-word;
-    color: #d9d9d9;
+    color: var(--white);
     --f2w-order: 0;
     -webkit-background-clip: text;
     background-clip: text;
@@ -351,7 +356,7 @@ body ::-webkit-scrollbar {
 
 #__3 {
     overflow-wrap: break-word;
-    color: #d9d9d9;
+    color: var(--white);
     -webkit-background-clip: text;
     background-clip: text;
     font-family: Inter;
@@ -359,7 +364,7 @@ body ::-webkit-scrollbar {
     font-weight: 500;
 }
 
-#Frame_4 {
+#Frame_4{
     grid-column-gap: 28.4px;
     --f2w-order: 7;
     flex-flow: row;
@@ -376,7 +381,7 @@ body ::-webkit-scrollbar {
 #_3_17 {
     text-align: center;
     overflow-wrap: break-word;
-    color: #fff;
+    color: var(--white);
     --f2w-order: 0;
     -webkit-background-clip: text;
     background-clip: text;
@@ -392,7 +397,7 @@ body ::-webkit-scrollbar {
 
 #__4 {
     overflow-wrap: break-word;
-    color: #fff;
+    color: var(--white);
     -webkit-background-clip: text;
     background-clip: text;
     font-family: Inter;
@@ -403,7 +408,7 @@ body ::-webkit-scrollbar {
 #_3_18 {
     text-align: center;
     overflow-wrap: break-word;
-    color: #fff;
+    color: var(--white);
     --f2w-order: 1;
     -webkit-background-clip: text;
     background-clip: text;
