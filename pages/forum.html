@@ -7,136 +7,51 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Singularity - Fórum</title>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        nav {
-            background-color: #007bff;
-            padding: 20px;
-            color: white;
-            display: flex;
-            align-items: center;
-        }
-
-        nav svg {
-            margin-right: 20px;
-        }
-
-        #nav-links a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-        }
-
-        main {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .topic {
-            border-bottom: 1px solid #ddd;
-            padding: 15px;
-        }
-
-        .topic:last-child {
-            border-bottom: none;
-        }
-
-        .topic h2 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .topic p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #555;
-        }
-
-        /* Formulário de nova postagem */
-        form {
-            margin-top: 30px;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-
-        form button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Singularity</title>
 </head>
 <body>
     <nav>
         <svg preserveAspectRatio="none" id="Vector" class="pointer-events-none" width="85" height="59" viewBox="0 0 85 59" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42.4445 2.46625L42.8685 28.5992L58.5759 7.70639L43.5546 29.0976L68.5457 21.4253L43.8167 29.904L68.5457 38.3827L43.5546 30.7104L58.5759 52.1016L42.8685 31.2087L42.4445 57.3417L42.0204 31.2087L26.313 52.1016L41.3343 30.7104L16.3432 38.3827L41.0722 29.904L16.3432 21.4253L41.3343 29.0976L26.313 7.70639L42.0204 28.5992L42.4445 2.46625Z" fill="#7B7B7B"></path><path d="M42.4445 0.777771L43.0933 12.605C43.5713 21.3198 50.6141 28.2341 59.3382 28.5538L84.6667 29.4819L59.3382 30.4099C50.614 30.7296 43.5713 37.6439 43.0933 46.3587L42.4445 58.1859L41.7956 46.3587C41.3176 37.6439 34.2748 30.7296 25.5507 30.4099L0.222229 29.4819L25.5507 28.5538C34.2749 28.2341 41.3176 21.3198 41.7956 12.605L42.4445 0.777771Z" fill="#D9D9D9"></path><path d="M47.5111 29.4819C47.5111 32.2794 45.2427 34.5473 42.4445 34.5473C39.6462 34.5473 37.3778 32.2794 37.3778 29.4819C37.3778 26.6843 39.6462 24.4164 42.4445 24.4164C45.2427 24.4164 47.5111 26.6843 47.5111 29.4819Z" fill="#1E1E1E"></path></svg>
         <div id="nav-links">
-            <a href="#">About</a>
-            <a href="#">FAQ</a>
+            <a>About</a>
+            <a>FAQ</a>
         </div>
     </nav>
-
     <main>
-        <h1>Fórum</h1>
-
-        <!-- Tópico 1 -->
-        <div class="topic">
-            <h2>Título do Tópico 1</h2>
-            <p>Autor: Usuário1</p>
-            <p>Descrição do conteúdo do tópico 1. Aqui vai o texto da postagem.</p>
+        <h1>FAQ</h1>
+            <button class="accordion"><span class="material-symbols-outlined">add</span>Pergunta 1</button>
+        <div class="panel">
+            <p>Resposta</p>
         </div>
-
-        <!-- Tópico 2 -->
-        <div class="topic">
-            <h2>Título do Tópico 2</h2>
-            <p>Autor: Usuário2</p>
-            <p>Descrição do conteúdo do tópico 2. Aqui vai o texto da postagem.</p>
+        <button class="accordion"><span class="material-symbols-outlined">add</span>Pergunta 2</button>
+        <div class="panel">
+            <p>Resposta</p>
         </div>
-
-        <!-- Tópico 3 -->
-        <div class="topic">
-            <h2>Título do Tópico 3</h2>
-            <p>Autor: Usuário3</p>
-            <p>Descrição do conteúdo do tópico 3. Aqui vai o texto da postagem.</p>
+        <button class="accordion"><span class="material-symbols-outlined">add</span>Pergunta 3</button>
+        <div class="panel">
+            <p>Resposta</p>
         </div>
-
-        <!-- Formulário de novo tópico -->
-        <h2>Adicionar Novo Tópico</h2>
-        <form action="" method="POST">
-            <input type="text" name="title" placeholder="Título do Tópico" required>
-            <input type="text" name="author" placeholder="Seu Nome" required>
-            <textarea name="content" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea>
-            <button type="submit">Publicar</button>
-        </form>
     </main>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var icon = document.querySelectorAll("span");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+        });
+        }
+    </script>
 </body>
 </html>
