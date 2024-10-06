@@ -1,0 +1,57 @@
+body {
+    background-color: #1E1E1E;
+    color: #D9D9D9;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 72px;
+}
+
+nav {
+    display: flex;
+    width: 59.66669rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+main {
+    width: 65%;
+    margin: 0  auto;
+}
+
+.column1 {
+    width: 455px;
+}
+
+.column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links {
+    display: flex;
+width: 8.27775rem;
+justify-content: center;
+align-items: center;
+gap: 1.77775rem;
+flex-shrink: 0;
+}
+
+.columncontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#picture {
+    width: 455px
+}
+
+.divider {
+    width: 100%;
+    margin: 0 auto;
+}
