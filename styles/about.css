@@ -1,269 +1,88 @@
-:root {
-    --black: #1E1E1E;
-    --white: #D9D9D9;
-  }
-
-  @font-face {
-    src: url(/__assets/BricolageGrotesque-SemiBold-600.woff2) format("woff2");
-    font-family: Bricolage Grotesque;
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-}
-
-/* Global Styles */
-*,
-:before,
-:after {
-    box-sizing: border-box;
-}
-
 body {
-    -webkit-font-smoothing: antialiased;
+    background-color: #1E1E1E;
+    color: #D9D9D9;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
 }
 
-textarea:focus-visible {
-    outline: none;
+h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 72px;
 }
 
-/* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
+nav {
+    display: flex;
+    width: 59.66669rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
-a {
-    color: inherit;
-    text-decoration: inherit;
+main {
+    width: 65%;
+    margin: 0  auto;
 }
 
-input {
-    font: inherit;
-    background-color: inherit;
+.column1 {
+    width: 455px;
+}
+
+.column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links {
+    display: flex;
+width: 8.27775rem;
+justify-content: center;
+align-items: center;
+gap: 1.77775rem;
+flex-shrink: 0;
+}
+
+.columncontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#picture {
+    width: 455px
+}
+
+.divider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #1E1E1E;
+    color: #D9D9D9;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
     border: none;
     outline: none;
+    transition: 0.4s;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
 }
 
-button {
-    -webkit-font-smoothing: inherit;
-    -moz-osx-font-smoothing: inherit;
-    font: inherit;
-    background: transparent;
-    color: inherit;
-    border: none;
-    width: auto;
-    line-height: normal;
-    overflow: visible;
-}
-
-textarea,
-select {
-    font: inherit;
-    background-color: inherit;
-}
-
-/* Media Elements */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-}
-
-/* Interactive Elements */
-[data-reaction-click] {
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
     cursor: pointer;
 }
 
-[data-visible=false] {
-    display: none !important;
-}
-
-/* Visibility Control */
-.before-hidden:before,
-.after-hidden:after {
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
     display: none;
-}
-
-.before-visible:before,
-.after-visible:after {
-    content: "";
-}
-
-/* Placeholder Styles */
-::placeholder {
-    color: inherit;
-    opacity: .54;
-}
-
-/* Scrollbar Styles */
-body * {
-    scrollbar-width: none; /* For Firefox */
-}
-
-body ::-webkit-scrollbar {
-    display: none; /* For WebKit browsers */
-}
-
-/* Hidden Fields */
-[name=honey-pot-field] {
-    display: none !important;
-}
-
-/* Pointer Events */
-.pointer-events-none {
-    pointer-events: none;
-}
-
-/* Main Container Styles */
-#_ {
-    background-color: var(--black);
-    min-height: 100vh;
-    display: grid;
-}
-
-#container_about {
-    background-color: var(--black);
-    width: 1280px;
-    min-width: 1280px;
-    max-width: 1280px;
-    min-height: 832px;
-    max-height: 832px;
-    margin: 0 auto;
-    position: relative;
     overflow: hidden;
 }
 
-/* Frame Styles */
-#Frame_8{
-    grid-column-gap: 0;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    width: 954.7px;
-    padding: 0;
-    position: absolute;
-    top: 17.8px;
-    left: 142.2px;
+span {
+    margin-right: 12px;
 }
-
-#Vector {
-    flex-shrink: 0;
-    width: 85px;
-    height: 59px;
-    margin: 0 auto 0 0;
-    position: relative;
-}
-
-/* Text Styles */
-#_3_35,
-#__0,
-#_3_36,
-#__1 {
-    text-align: center;
-    overflow-wrap: break-word;
-    color: var(--white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: Inter;
-    font-size: 17.8px;
-    font-weight: 500;
-    display: inline;
-    position: relative;
-}
-
-#_3_45{
-    text-align: left;
-    -webkit-text-stroke: 1px #7b7b7b;
-    overflow-wrap: break-word;
-    color: #0000;
-    background-image: linear-gradient(var(--white) 0%, #7b7b7b 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    width: 740px;
-    font-family: Bricolage Grotesque;
-    font-size: 74.4px;
-    font-weight: 600;
-    line-height: 72px;
-    display: inline;
-    position: absolute;
-    top: 132px;
-    left: calc(50% - 464px);
-}
-
-#_3_46,
-#__3 {
-    text-align: left;
-    overflow-wrap: break-word;
-    color: var(--white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    width: 455px;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 500;
-    display: inline;
-    position: absolute;
-}
-
-#_3_46 {
-    top: 218px;
-    left: calc(50% - 464px);
-}
-
-#_3_47,
-#__9,
-#__12,
-#__13 {
-    text-align: left;
-    overflow-wrap: break-word;
-    color: var(--white);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 500;
-    display: inline;
-}
-
-#_3_47 {
-    position: absolute;
-    top: 665px;
-    left: calc(50% - 464px);
-}
-
-#Star_1 {
-    aspect-ratio: 44.84;
-    width: 1121px;
-    height: 25px;
-    position: absolute;
-    top: 593.8px;
-    left: calc(50% - 560px);
-}
-
-/* Rectangle Styles */
-#Rectangle_3 {
-    background-color: var(--white);
-    border-radius: 4px;
-    width: 455px;
-    height: 326px;
-    position: absolute;
-    top: 204px;
-    left: 671px;
-}
-
-#Frame_4{
-    grid-column-gap:28.4px;
-    --f2w-order:1;
-    flex-flow: row;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items:center;
-    width: 200.4px;
-    margin-left: 0;
-    padding: 0;
-    margin-right: -215px;
-    display:flex;
-    position:relative}
