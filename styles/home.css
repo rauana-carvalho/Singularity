@@ -22,6 +22,8 @@
 iframe {
     display: block;
     margin: 0 auto;
+    width: 90%;
+    height: 500px;
 }
 
 body {
@@ -180,6 +182,10 @@ body ::-webkit-scrollbar {
     transform: rotate(-180deg) scaleX(-1);
 }
 
+a {
+    color: #d9d9d9;
+}
+
 #Ellipse_1 {
     aspect-ratio: 1.51;
     mask-type: alpha;
@@ -203,8 +209,8 @@ body ::-webkit-scrollbar {
     text-align: center;
     width: 657.8px;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 66.2px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 200;
     line-height: 64px;
     display: inline;
     position: absolute;
