@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <title>Singularity</title>
 </head>
@@ -17,20 +18,40 @@
         </div>
     </nav>
     <main>
-        <div class="columncontainer">
-            <div class="column1">
-                <h1>About</h1>
-                <p>Visualize Space Science is a solution to NASA’s Space Apps 2024 challenge that goes by the same name.</p>
-                <p>Combining rich data visualization with engaging storytelling, this project aims to foster collaboration and insights between scientists throughout the world and of varying expertise.</p>
-                <p>The Visualize Space Science website was created by the Singularity team at the João Pessoa local event.</p>
-            </div>
-            <div class="column2">
-            <img id="picture" src="./us.png">
-            </div>
+        <h1>FAQ</h1>
+            <button class="accordion"><span class="material-symbols-outlined">add</span>Pergunta 1</button>
+        <div class="panel">
+            <p>Resposta</p>
         </div>
-        <img src="./divider.png" class="divider">
-        <p>Would like to collaborate, give feedback or simply reach out?</p>
-        <p>Contact us at email@email.</p>
+        <button class="accordion"><span class="material-symbols-outlined">add</span>Pergunta 2</button>
+        <div class="panel">
+            <p>Resposta</p>
+        </div>
+        <button class="accordion"><span class="material-symbols-outlined">add</span>Pergunta 3</button>
+        <div class="panel">
+            <p>Resposta</p>
+        </div>
     </main>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var icon = document.querySelectorAll("span");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+        });
+        }
+    </script>
 </body>
 </html>
