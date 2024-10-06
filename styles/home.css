@@ -128,6 +128,8 @@ body ::-webkit-scrollbar {
     background-color: var(--black);
     min-height: 100vh;
     display: grid;
+    font-family: "Inter", sans-serif;
+    color: var(--white);
 }
 
 #container {

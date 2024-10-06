@@ -1,13 +1,18 @@
-body {
-    background-color: #1E1E1E;
-    color: #D9D9D9;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
+:root {
+    --black: #1E1E1E;
+    --white: #D9D9D9;
 }
 
-h1 {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 72px;
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--black);
 }
 
 nav {
@@ -18,9 +23,173 @@ nav {
     margin: 0 auto;
 }
 
+textarea:focus-visible {
+    outline: none;
+}
+
+button {
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    font: inherit;
+    background: 0 0;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    width: auto;
+    line-height: normal;
+    overflow: visible;
+}
+
+a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+}
+
+input {
+    font: inherit;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+textarea,
+select {
+    font: inherit;
+    background-color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+}
+
+[data-reaction-click] {
+    cursor: pointer;
+}
+
+[data-visible=false] {
+    display: none !important;
+}
+
+.before-hidden:before,
+.after-hidden:after {
+    display: none;
+}
+
+.before-visible:before,
+.after-visible:after {
+    content: "";
+}
+
+::placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+body * {
+    scrollbar-width: none;
+}
+
+body ::-webkit-scrollbar {
+    display: none;
+}
+
+[name=honey-pot-field] {
+    display: none !important;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+
+#container {
+    background-color: var(--black);
+    width: 1280px;
+    min-width: 1280px;
+    max-width: 1280px;
+    min-height: 832px;
+    max-height: 832px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Bricolage Grotesque;
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    margin-top: 93.3px;
+    margin-bottom: 2px;
+}
+
+#Rectangle_2 {
+    --f2w-order: 0;
+    background-color: var(--black);
+    width: 1280px;
+    height: 93.3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#_ {
+    background-color: var(--black);
+    display: grid;
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+}
+
 main {
     width: 65%;
     margin: 0  auto;
+    width: 59.66669rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#Frame_8 {
+    grid-column-gap: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 954.7px;
+    padding: 0;
+    position: absolute;
+    top: 17.8px;
+    left: 142.2px;
+}
+
+#_3_35, #_3_36{
+    text-align: center;
+    overflow-wrap: break-word;
+    color: var(--white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Inter;
+    font-size: 17.8px;
+    font-weight: 500;
+    display: inline;
+    position: relative;
+}
+
+
+#_0, #_1{
+    overflow-wrap: break-word;
+    color: var(--white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Inter;
+    font-size: 17.8px;
+    font-weight: 500;
 }
 
 .column1 {
@@ -58,8 +227,8 @@ flex-shrink: 0;
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #1E1E1E;
-    color: #D9D9D9;
+    background-color: var(--black);
+    color: var(--white);
     cursor: pointer;
     padding: 18px;
     width: 100%;
