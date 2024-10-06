@@ -66,9 +66,10 @@ button {
 }
 
 a {
-    color: inherit;
-    -webkit-text-decoration: inherit;
-    text-decoration: inherit;
+    text-decoration: none;
+    color: #D9D9D9;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 20px;
 }
 
 input {
