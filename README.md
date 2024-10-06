@@ -1,12 +1,10 @@
-# Singularity
+Singularity
 
-**Problemática**
+Problem
 
-Visualize a Ciência Espacial
+Visualizing Space Science
 
-Experimentos biológicos realizados no espaço são essenciais para os esforços de descoberta científica, mas são complexos de executar e difíceis de conceituar. Por exemplo, esses experimentos devem ser carregados em foguetes, lançados, realizados usando hardware especializado e (frequentemente) devolvidos à Terra para análise. Essa complexidade é uma barreira para a ampla utilização desses dados. Seu desafio é criar uma ferramenta que possa gerar visualizações informativas e atraentes de experimentos biológicos realizados no espaço.
-
-Fluxograma do Projeto: 
+Biological experiments conducted in space are essential to scientific discovery efforts, but they are complex to execute and difficult to conceptualize. For example, these experiments must be loaded onto rockets, launched, performed using specialized hardware, and (often) returned to Earth for analysis. This complexity is a barrier to the widespread use of these data. Your challenge is to create a tool that can generate informative and compelling visualizations of biological experiments conducted in space.
 
 Link da plataforma: 
 Chat: https://2845adca7c47668d01.gradio.live/
