@@ -59,7 +59,12 @@ flex-shrink: 0;
 }
 
 #picture {
-    width: 455px
+    margin-top: 70px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    width: 455px;
+    height: 300px;
+    border-radius: 20px;
 }
 
 .divider {
