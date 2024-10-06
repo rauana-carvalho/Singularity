@@ -9,21 +9,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/home.css">
     <style>
+      body {
+          font-family: 'Inter', sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+
+      #container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+
+      #Rectangle_2, #Mask_group, svg, #Frame_3, #Frame_4 {
+          margin-bottom: 20px;
+      }
 
       iframe {
           display: block;
           margin: 0 auto;
       }
-        
+
       #iframe-text {
-          text-align: center;
           font-family: 'Inter', sans-serif;
-          font-size: 16px; 
-          margin-top: 20px;
+          font-size: 14px; 
+          margin-top: 10px;
+      }
+
+      #Frame_4 a {
+          margin: 0 10px;
+      }
+
+      button {
+          padding: 10px 20px;
+          font-size: 14px;
+          cursor: pointer;
       }
     </style>
 </head>
-<body id="_">
+<body>
   <div id="container">
     <div id="Rectangle_2" class="pointer-events-none"></div>
     <svg preserveAspectRatio="none" id="Vector" class="pointer-events-none" width="85" height="59" viewBox="0 0 85 59" fill="none" xmlns="http://www.w3.org/2000/svg">
