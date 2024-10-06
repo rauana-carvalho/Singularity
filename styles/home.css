@@ -5,7 +5,7 @@
 
 @font-face {
     src: url(/__assets/BricolageGrotesque-SemiBold-600.woff2) format("woff2");
-    font-family: Bricolage Grotesque;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-display: swap;
@@ -19,8 +19,13 @@
     padding: 0;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 body {
-    background-color: var(--black);
+    background-color: #633bd1;
 }
 
 nav {
@@ -37,7 +42,7 @@ nav {
     width: 1121px;
     height: 25px;
     position: absolute;
-    top: 593.8px;
+    top: 700.8px;
     left: calc(50% - 560px);
 }
 
@@ -125,7 +130,7 @@ body ::-webkit-scrollbar {
 }
 
 #_ {
-    background-color: var(--black);
+    background-color: #633bd1;
     min-height: 100vh;
     display: grid;
     font-family: "Inter", sans-serif;
@@ -133,7 +138,7 @@ body ::-webkit-scrollbar {
 }
 
 #container {
-    background-color: var(--black);
+    background-color: #633bd1;
     width: 1280px;
     min-width: 1280px;
     max-width: 1280px;
@@ -146,7 +151,7 @@ body ::-webkit-scrollbar {
 
 #Rectangle_2 {
     --f2w-order: 0;
-    background-color: var(--black);
+    background-color: #633bd1;
     width: 1280px;
     height: 93.3px;
     position: absolute;
@@ -196,31 +201,21 @@ body ::-webkit-scrollbar {
 
 #_3_8 {
     text-align: center;
-    -webkit-text-stroke: 0.9px #7b7b7b;
-    overflow-wrap: break-word;
-    color: #0000;
-    --f2w-order: 3;
-    background-image: linear-gradient(var(--white) 0%, #7b7b7b 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
     width: 657.8px;
-    font-family: Bricolage Grotesque;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 66.2px;
     font-weight: 600;
     line-height: 64px;
     display: inline;
     position: absolute;
-    top: 203.6px;
+    top: 80px;
     left: calc(50% - 328.9px);
 }
 
 #__0 {
     overflow-wrap: break-word;
-    color: #0000;
-    background-image: linear-gradient(var(--white) 0%, #7b7b7b 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: Bricolage Grotesque;
+    color: #d9d9d9;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 66.2px;
     font-weight: 600;
     line-height: 64px;
